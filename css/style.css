@@ -1,0 +1,31 @@
+/*alle kleuren voor bouwblokken*/
+body {
+    background-color: #19181B;
+}
+
+nav {
+    background-color: #2B1F3B;
+}
+
+header {
+    background-color: #2B1F3B;
+}
+
+
+/*alle tekst opties*/
+p {
+    color: #F0F0FA;
+    font-family: 'Lucida console', monospace;
+    font-size: 16px;
+}
+.titel {
+    color: #fbffe2;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 48px;
+}
+.subtitel {
+    color: #f8f8e5;
+    font-family: 'Lucida console', monospace;
+    font-size: 18px;
+}
+

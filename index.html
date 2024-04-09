@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="nl-BE">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>CyberSnip</title>
 </head>
-<body>
-    
+<body class="p-3 m-0 border-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Assets/logo1-removebg-preview.png" alt="CyberSnips Logo" id="navbar-logo" style="height: 200px; width: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="diensten.html">Snips</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container-fluid rounded">
+        <section class="row">
+            <button href="diensten.html" class="col-12 btn btn-outline-light">
+                <img src="Assets/logo3-removebg-preview.png" alt="CyberSnips Logo" class="img-fluid" style="height: 100px; width: auto;">
+            </button>
+        </section>
+    </header>
+    <main>
+        <section class="container-fluid">
+            <h2 class="text-start titel">Welkom!</h2>
+            <p class="text-start textkleur">In de wereld van cybersecurity komt informatie razendsnel op ons af, wie heeft daarom nog tijd om langdradige artikels te lezen?<br>
+                Daarom is CyberSnip bedacht! <br> Door gebruik van OpenAI worden trending topics en brekende verhalen geknipt en samengevat om enkel de meest belangrijke informatie over te houden.
+                Vind je het artikel toch interessant genoeg om volledig te lezen kan je doorklikken naar de bron van het artikel.
+            </p>
+            <p>Een <i><b>SNIP</b></i> (genoemd naar het geluid dat een knippende schaar maakt) van de cyberwereld, een korte samenvatting van de meest relevante cybersecurity verhalen die momenteel rondgaan.
+            </p>
+        </section>
+        <button href="diensten.html" class="col-2 offset-5 btn btn-outline-light">
+            <img src="Assets/logo3-removebg-preview.png" alt="CyberSnips Logo" class="img-fluid">
+        </button>
+    </main>
 </body>
 </html>
