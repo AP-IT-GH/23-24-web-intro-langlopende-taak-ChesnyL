@@ -1,3 +1,13 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 /*alle kleuren voor bouwblokken*/
 body {
     background-color: #19181B;
@@ -13,10 +23,19 @@ header {
 
 .cardbg {
     background-color: #2b1f3bfc;
-    outline-width: 4px;
-    outline-color: #2b1f3be0;
-    height: 300;
-    width: 250;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #352747df;
+    animation: fade 1s ease-in;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
@@ -24,7 +43,7 @@ header {
 p {
     color: #F0F0FA;
     font-family: 'Lucida console', monospace;
-    font-size: 16px;
+    font-size: 12px;
 }
 .titel {
     color: #fbffe2;
@@ -45,6 +64,11 @@ p {
 /* img opties */
 
 .cardimg {
-    height: auto;
-    width: auto;
+    max-height: 200px;
+    max-width: auto;
+    object-fit: cover;
+}
+
+.buttonanim {
+    animation: fade 3s ease-in;
 }
