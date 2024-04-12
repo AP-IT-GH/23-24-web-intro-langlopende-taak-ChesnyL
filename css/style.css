@@ -11,6 +11,14 @@ header {
     background-color: #2B1F3B;
 }
 
+.cardbg {
+    background-color: #2b1f3bfc;
+    outline-width: 4px;
+    outline-color: #2b1f3be0;
+    height: 300;
+    width: 250;
+}
+
 
 /*alle tekst opties*/
 p {
@@ -28,4 +36,15 @@ p {
     font-family: 'Lucida console', monospace;
     font-size: 18px;
 }
+.cardtekst {
+    color: #2B1F3B;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
 
+/* img opties */
+
+.cardimg {
+    height: auto;
+    width: auto;
+}
