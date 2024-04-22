@@ -61,6 +61,12 @@ p {
     font-size: 14px;
 }
 
+.deftekst {
+    color: #F0F0FA;
+    font-family: 'Lucida console', monospace;
+    font-size: 16px;
+}
+
 /* img opties */
 
 .cardimg {
@@ -70,5 +76,5 @@ p {
 }
 
 .buttonanim {
-    animation: fade 3s ease-in;
+    animation: fade 0.5s ease-in;
 }
