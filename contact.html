@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>contact</title>
 </head>
+
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -31,43 +33,46 @@
                     <li class="nav-item">
                         <a class="nav-link" href="diensten.html">Snips</a>
                     </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
                     <li>
                         <a class="nav-link" href="team.html">Ons team</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Voorbeeld1</a></li>
+                          <li><a class="dropdown-item" href="#">Voorbeeld2</a></li>
+                          <li><a class="dropdown-item" href="#">Voorbeeld3</a></li>
+                        </ul>
+                      </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <header>
         <h1 class="titel text-center">Contacteer ons!</h1>
     </header>
-    <main>
-        <form action="GET" class="deftekst">
-            <section class="mb-3 container" style="justify-content: space-evenly;">
-                <label for="Naam" class="form-label">Naam</label>
-                <input type="text" class="form-control" id="Naam" placeholder="Voer uw naam in.">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Voer uw email in.">
-            </section>
-            <section class="mb-3 container" style="justify-content: space-evenly;">
-                <label for="Contactbox" class="form-label">Mogen we u <br> contacteren via <br> E-mail?</label>
-                <input type="checkbox">
-                <label for="contactlist" class="form-label">Wilt u iemand <br> specifiek contacteren?</label>
 
-            </section>
-            <section class="mb-3 container" style="flex-direction: column;">
-                <label for="boodschap" class="form-label">Uw boodschap</label>
-                <input type="text" class="form-control" id="msgboodschap" placeholder="Laat ons weten wat u van het project vind!">
-            </section>
-            <section class="pt-3 container">
-                <input type="submit" class="rounded">
-            </section>
-        </form>
+    <main>
+        <form>      
+            <input name="naam" type="text" class="feedback-input" placeholder="Naam" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <select class="form-select" aria-label="Default select example">
+                <option selected>België</option>
+                <option value="NL">Nederland</option>
+                <option value="FR">Frankrijk</option>
+                <option value="DE">Duitsland</option>
+              </select>
+            <textarea name="text" class="feedback-input" placeholder="Uw boodschap"></textarea>
+            <input type="submit" value="SUBMIT"/>
+          </form>
     </main>
-    <aside></aside>
+
     <footer class="text-muted text-center">
         CyberSnip - 2024 - <a href="contact.html">Contact</a>
     </footer>

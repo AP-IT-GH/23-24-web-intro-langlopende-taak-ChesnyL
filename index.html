@@ -37,15 +37,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li><a class="dropdown-item" href="#">Voorbeeld1</a></li>
+                          <li><a class="dropdown-item" href="#">Voorbeeld2</a></li>
+                          <li><a class="dropdown-item" href="#">Voorbeeld3</a></li>
+                        </ul>
+                      </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <section class="container row" style="flex-wrap: wrap;">
-            <img src="Assets/pexels-tima-miroshnichenko-5380664.jpg" alt="cybersnip landing" class="col img-fluid rounded" style="height: 300px; width: auto;">
-            <article class="col">
-                <h2 class="text-start titel">Welkom!</h2>
+        <header>
+            <h2 class="text-center titel">Welkom!</h2>
+        </header>
+        <section class="row">
+            <article class="col-sm-6 col-md-4">
                 <p class="text-start textkleur">In de wereld van cybersecurity komt informatie razendsnel op ons af, wie heeft daarom nog tijd om langdradige artikels te lezen?<br>
                     Daarom is CyberSnip bedacht! <br> Door gebruik van OpenAI worden trending topics en brekende verhalen geknipt en samengevat om enkel de meest belangrijke informatie over te houden.
                     Een <i><b>SNIP</b></i> (genoemd naar het geluid dat een knippende schaar maakt) van de cyberwereld, zal alle technische informatie uit het artikel halen, welk bedrijf of welke app er aangetast is en wat de gevolgen zijn.
@@ -54,6 +65,7 @@
                     Nu je weet wat een SNIP is, kan ik geloven dat je klaar bent om te ontdekken hoe ze er in de werkelijkheid uitzien. Daarom heb ik een handige knop onderaan deze pagina gezet die je meteen naar onze SNIP pagina brengt.
                 </p>
             </article>
+            <img src="Assets/pexels-tima-miroshnichenko-5380664.jpg" alt="cybersnip landing" class="col-sm-6 col-md-4" style="height: 300px; width: auto;">
         </section>
         <button class="col-2 offset-5 btn btn-outline-dark buttonanim">
             <img href="diensten.html" src="Assets/white-logo-button.png" alt="CyberSnips Logo" class="img-fluid">
