@@ -1,20 +1,6 @@
-.container{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-grow: 1;
-    gap: 10px;
-    margin-top: 10px;
-}
-
 /*alle kleuren voor bouwblokken*/
 body {
     background-color: #19181B;
-}
-
-nav {
-    background-color: #2B1F3B;
 }
 
 header {
@@ -72,7 +58,7 @@ p {
 .cardimg {
     max-height: 200px;
     max-width: auto;
-    object-fit: cover;
+    object-fit: scale-down;
 }
 
 .buttonanim {
