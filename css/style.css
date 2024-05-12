@@ -1,4 +1,8 @@
 /*alle kleuren voor bouwblokken*/
+canvas {
+    background-color: #422b6152;
+}
+
 body {
     background-color: #19181B;
 }
@@ -56,9 +60,9 @@ p {
 /* img opties */
 
 .cardimg {
-    max-height: 200px;
-    max-width: auto;
-    object-fit: scale-down;
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .buttonanim {

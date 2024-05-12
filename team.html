@@ -13,9 +13,18 @@
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- js -->
+    <script src="./js/cyberMap.js" defer></script>
+
+
     <title>team</title>
 </head>
-<body>
+<body class="p-3 m-0 border-0">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -46,7 +55,7 @@
                             <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="artikel.html">Trending</a></li>
                             <li><a class="dropdown-item" href="antivirus.html">Antivirus vergelijking</a></li>
-                            <li><a class="dropdown-item" href="#">Voorbeeld3</a></li>
+                            <li><a class="dropdown-item" href="cyberaanvallen.html">cyberaanvallen</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -55,22 +64,22 @@
         </nav>
     </header>
     <main>
-        <section class="container" style="justify-content: center;">
-            <article class="card cardbg">
+        <section class="row mx-2 py-2">
+            <article class="card cardbg col-4">
                 <img src="Assets/team/ceo.png" alt="ceo" class="card-img cardimg img-fluid rounded">
                 <article class="card-img-top">
                     <h2 class="card-title subtitel">Carol Danvers</h2>
                     <p>CEO of CyberSnip</p>
                 </article>
             </article>
-            <article class="card cardbg">
+            <article class="card cardbg col-4">
                 <img src="Assets/team/werknemer3.png" class="card-img cardimg rounded" alt="Finance">
                 <article class="card-img-top">
                     <h2 class="card-title subtitel">Peter Parker</h2>
                     <p>Head of finance</p>
                 </article>
             </article>
-            <article class="card cardbg">
+            <article class="card cardbg col-4">
                 <img src="Assets/team/werknemer2.png" class="card-img cardimg rounded" alt="Marketing">
                 <article class="card-img-top">
                     <h2 class="card-title subtitel">Frank Castle</h2>
@@ -78,21 +87,24 @@
                 </article>
             </article>
         </section>
-        <section class="container" style="justify-content: center;">
-            <article class="card cardbg">
+        <section class="row mx-2 py-2">
+            <article class="card cardbg col-6">
                 <img src="Assets/team/werknemer.png" alt="developer" class="card-img cardimg img-fluid rounded">
                 <article class="card-img-top">
                     <h2 class="card-title subtitel">Bruce Banner</h2>
                     <p>Full-Stack Developer</p>
                 </article>
             </article>
-            <article class="card cardbg">
+            <article class="card cardbg col-6">
                 <img src="Assets/team/werknemer4.png" class="card-img cardimg rounded" alt="SEO engineer">
                 <article class="card-img-top">
                     <h2 class="card-title subtitel">Gwen Stacey</h2>
                     <p>SEO engineer</p>
                 </article>
             </article>
+        </section>
+        <section class="row" id="cyberMap">
+            <div id="cyberMap" class="col-12 mb-3" style="height: 400px;"></div>
         </section>
     </main>
     <aside></aside>

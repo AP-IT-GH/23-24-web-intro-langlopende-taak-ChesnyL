@@ -14,7 +14,7 @@
         <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>antivirus</title>
+    <title>cyberaanvallen</title>
 </head>
 <body class="p-3 m-0 border-0">
     <header>
@@ -55,43 +55,63 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container-fluid">
-            <h2 class="text-center mb-4 titel">Antivirus Vergelijking</h2>
-            <table class="table">
-              <thead class="subtitel">
-                <tr scope="row row-sm-4 row-md-6">
-                  <th scope="col">Antivirus Programma</th>
-                  <th scope="col">Kenmerken</th>
-                  <th scope="col">Prijs</th>
-                  <th scope="col">Ondersteunde Besturingssystemen</th>
-                </tr>
-              </thead>
-              <tbody class="deftekst">
-                <tr>
-                  <td>Avast</td>
-                  <td>Real-time bescherming, malware detectie, firewall</td>
-                  <td>Gratis voor basisversie, betaalde versies beschikbaar</td>
-                  <td>Windows, macOS, Android</td>
-                </tr>
-                <tr>
-                  <td>Bitdefender</td>
-                  <td>Hoogwaardige malware detectie, VPN, wachtwoordmanager</td>
-                  <td>Betaalde versies beschikbaar</td>
-                  <td>Windows, macOS, Android, iOS</td>
-                </tr>
-                <tr>
-                  <td>Norton</td>
-                  <td>Cloud-back-up, ouderlijk toezicht, veiligheidsadviseur</td>
-                  <td>Betaalde versies beschikbaar</td>
-                  <td>Windows, macOS, Android, iOS</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-    </main>
-    <footer class="text-muted text-center">
-        CyberSnip - 2024 - <a href="contact.html">Contact</a>
-    </footer>
-</body>
-</html>
+    <section class="container-fluid">
+        <article class="subtitel pb-2">Cyberaanvallen en hoe ze stijgen doorheen de jaren.</article>
+        <article>
+            <p>In de afgelopen decennia hebben we een alarmerende stijging gezien van cyberaanvallen die onze digitale wereld teisteren. Wat ooit begon als sporadische pogingen om systemen te verstoren, is geëvolueerd naar een voortdurende dreiging die organisaties, overheden en individuen wereldwijd treft. <br>
+
+                Terwijl technologie vooruitgaat en onze samenleving steeds meer afhankelijk wordt van digitale infrastructuren, hebben cybercriminelen nieuwe en geavanceerdere methoden ontwikkeld om kwetsbaarheden te exploiteren. Van eenvoudige phishing-e-mails tot complexe ransomware-aanvallen en geavanceerde persistent threats (APT's), de diversiteit en frequentie van cyberaanvallen zijn exponentieel toegenomen.</p>
+        </article>
+    </section>
+    <section class="container-fluid mt-4 py-4">
+
+        <canvas id="myChart" class="col-12 deftekst"></canvas>
+
+        <script>
+            // 
+            const months = [
+                'Jan 2020', 'Feb 2020', 'Mar 2020', 'Apr 2020', 'May 2020', 'Jun 2020',
+                'Jul 2020', 'Aug 2020', 'Sep 2020', 'Oct 2020', 'Nov 2020', 'Dec 2020',
+                'Jan 2021', 'Feb 2021', 'Mar 2021', 'Apr 2021', 'May 2021', 'Jun 2021',
+                'Jul 2021', 'Aug 2021', 'Sep 2021', 'Oct 2021', 'Nov 2021', 'Dec 2021',
+                'Jan 2022', 'Feb 2022', 'Mar 2022', 'Apr 2022', 'May 2022', 'Jun 2022',
+                'Jul 2022', 'Aug 2022', 'Sep 2022', 'Oct 2022', 'Nov 2022', 'Dec 2022',
+                'Jan 2023', 'Feb 2023', 'Mar 2023', 'Apr 2023', 'May 2023', 'Jun 2023',
+                'Jul 2023', 'Aug 2023', 'Sep 2023', 'Oct 2023', 'Nov 2023', 'Dec 2023',
+                'Jan 2024', 'Feb 2024', 'Mar 2024', 'Apr 2024', 'May 2024'
+            ];
+            
+            // 
+            const cyberattackCounts = [
+    100, 95, 110, 105, 120, 125, 115, 130, 125, 140, 145, 140, // 2020
+    135, 140, 155, 150, 145, 160, 155, 150, 165, 160, 155, 170, // 2021
+    165, 170, 185, 180, 175, 190, 185, 180, 175, 190, 195, 190, // 2022
+    195, 200, 195, 190, 205, 200, 195, 200, 220, 240, 260, 280, // 2023
+    300, 320, 340, 360, 380, 400 // 2024
+];
+            
+            new Chart("myChart", {
+                type: "line",
+                data: {
+                    labels: months,
+                    datasets: [{
+                        label: 'Cyberattack Counts',
+                        fill: false,
+                        lineTension: 0,
+                        backgroundColor: "rgba(255,255,255,1.0)",
+                        borderColor: "rgba(255,255,255,0.2)",
+                        data: cyberattackCounts
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+            </script>
+    </section>
